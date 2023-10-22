@@ -9,7 +9,8 @@ Regular Expression **(A)**: ε | 0 | (100)<sup>*</sup>
 
 Regular Expression **(B)**: ε | b | (b)<sup>* </sup>a(b)<sup>* </sup> a(b)<sup>*</sup> b
 
-L(a) = {ε, 0, 0100, 00100, 100, 100100, 100100100, 100100100100, ..., 100100100100100100100100}.
+L(a) = {ε, 0, 0100, 00100, 100, 100100, 100100100, 100100100100, ..., 100100100100100100100100}
+
 L(b) = {ε, b, aab, babab, ababb, bababb, bababababbb, ..., abababababababab}
 
 ### Automata Diagram 🤔
