@@ -2,9 +2,9 @@ package util;
 
 public class AFD {
     private static int estadoAtual;
-    
+
     public static boolean processar(String entrada) {
-        for (int c: entrada.toCharArray()) {
+        for (int c : entrada.toCharArray()) {
             switch (estadoAtual) {
                 case 0:
                     if (c == ' ') {
