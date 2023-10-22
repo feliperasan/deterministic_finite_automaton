@@ -5,19 +5,19 @@ The code in this repository is related to the Computer Theory activity requested
 ## About the Automaton
 This automata accept the following sentences:
 
-Regular Expression: (100)<sup>*</sup>
+Regular Expression: ε | 0 | (100)<sup>*</sup>
 
-L(G) = {ε, 100, 100100, 100100100, 100100100100, ... 100100100100100100100100}.
+L = {ε, 0, 0100, 00100, 100, 100100, 100100100, 100100100100, ..., 100100100100100100100100}.
 
 ## Automaton Diagram
-
-![afd1](https://github.com/feliperasan/finite_and_deterministic_automata/assets/32422863/1cc11856-54e8-4c13-81ee-1f134d49a4f0)
+JFlap Image:
+![image](https://github.com/feliperasan/finite_and_deterministic_automata/assets/32422863/f5689248-6ce8-4afa-bab9-3aba36ba97c5)
 
 ## Pseudo-code
 
 ```
 atualState type integer;
-function boolean processor with parameter entrada:
+function boolean process with parameter entrada:
     broken entrada parameter in array of chars
     for each char in array entrada:
     case atualState is equal 0:
