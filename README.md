@@ -30,19 +30,52 @@ function boolean process with parameter entrada:
         and if char entrada is equal empty:
             atualState remains in 0 and return false, false is final state;
         else if char entrada is equal 1 then:
-            atualState assign 1
+            assign 1 to atualState
     case atualState is equal 1:
         and if char entrada is equal 0 then:
-            atualstate assign 2
+            assign 2 to atualstate
     case atualState is equal 2:
         and if char entrada is equal 0 then:
-            atualstate assign 0 and return false, false is final state;
+            assign 0 to atualstate and return false, false is final state;
 
     return finalState is equal 0? Yes true return valid sentence otherwise invalid;
     
 ```
 
 ### Pseudo-code B 🤔
+``` sh
+atualState type integer;
+function boolean process with parameter entrada:
+    broken entrada parameter in array of chars
+    for each char in array entrada:
+    case atualState is equal 0:
+        and if char entrada is equal empty:
+            atualState remains in 0 and return false, false is final state;
+        else if char entrada is equal a then:
+            assign 1 to atualState 
+        else if char entrada is equal b then:
+            assign 3 to atualState 
+        else return false, false is final state.
+    case atualState is equal 1:
+        if char entrada is equal b then:
+            assign 1 to atualState 
+        else if char entrada is equal b then:
+            assign 2 to atualState 
+        else return false;
+    case atualState is equal 2:
+        if char entrada is equal b then:
+            assign 3 to atualState 
+        else return false;
+    case atualState is equal 3:
+        if char entrada is equal b then:
+            assign 3 to atualState 
+        else if char entrada is equal a then:
+            assign 1 to atualState 
+        else return false;  
+
+    return finalState is equal 0 or equal 3? Yes it's true return valid sentence otherwise invalid;
+    
+```
 
 ### Question 2
 
