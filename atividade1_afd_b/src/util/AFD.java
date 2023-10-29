@@ -2,6 +2,7 @@ package util;
 
 public class AFD {
     private static int estadoAtual;
+    private static boolean estadoFinal;
     private static int contarA = 0;
 
     public static boolean processar(String entrada) {
@@ -29,9 +30,8 @@ public class AFD {
                 case 2:
                     if (c == 'b') {
                         estadoAtual = 3;
-                    } else if (c == 'a') {
-                        estadoAtual = 2;
-                        contarA++;
+                    } else {
+                        return false;
                     }
                     break;
                 case 3:
@@ -47,7 +47,6 @@ public class AFD {
                     break;
             }
         }
-        
-        return estadoAtual == 0 || estadoAtual == 3 && contarA % 2 != 1;
+        return estadoAtual == 0 || (contarA % 2 != 1 && estadoAtual == 3);
     }
 }
