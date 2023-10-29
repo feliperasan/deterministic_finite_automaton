@@ -16,11 +16,15 @@ public class AFD {
                 case 1:
                     if (c == '0') {
                         estadoAtual = 2;
+                    } else {
+                        return false;
                     }
                     break;
                 case 2:
                     if (c == '0') {
                         estadoAtual = 0;
+                    } else {
+                        return false;
                     }
                     break;
                 default:
