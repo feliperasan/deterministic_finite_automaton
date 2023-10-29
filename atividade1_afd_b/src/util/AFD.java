@@ -2,7 +2,6 @@ package util;
 
 public class AFD {
     private static int estadoAtual;
-    private static boolean estadoFinal;
     private static int contarA = 0;
 
     public static boolean processar(String entrada) {
