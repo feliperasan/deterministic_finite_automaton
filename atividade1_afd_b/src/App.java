@@ -1,11 +1,9 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 import util.AFD;
 
 public class App {
-    public static void main(String[] args) throws Exception {
-        Locale.setDefault(Locale.US);
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite a sentença: ");

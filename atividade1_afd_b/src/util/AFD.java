@@ -13,8 +13,6 @@ public class AFD {
                         estadoAtual = 1;
                     } else if (c == 'b') {
                         estadoAtual = 3;
-                    } else {
-                        return false;
                     }
                     break;
                 case 1:
@@ -22,15 +20,11 @@ public class AFD {
                         estadoAtual = 1;
                     } else if (c == 'a') {
                         estadoAtual = 2;
-                    } else {
-                        return false;
                     }
                     break;
                 case 2:
                     if (c == 'b') {
                         estadoAtual = 3;
-                    } else {
-                        return false;
                     }
                     break;
                 case 3:
@@ -38,8 +32,6 @@ public class AFD {
                         estadoAtual = 3;
                     } else if (c == 'a') {
                         estadoAtual = 1;
-                    } else {
-                        return false;
                     }
                     break;
                 default:

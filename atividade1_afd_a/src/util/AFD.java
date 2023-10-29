@@ -9,7 +9,6 @@ public class AFD {
                 case 0:
                     if (c == ' ') {
                         estadoAtual = 0;
-                        return false; // estado final
                     } else if (c == '1') {
                         estadoAtual = 1;
                     }
